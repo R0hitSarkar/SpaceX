@@ -20,7 +20,7 @@ t2 = document.getElementById("true2");
 f2 = document.getElementById("false2");
 b1.addEventListener('click',function(e){
     let v = /six /;
-    let r = document.getElementsByClassName("one");
+    let r = document.getElementsByClassName("only");
     for(let j=0;j<r.length;j++){
         r[j].style.display = "block";
     		let x = r[j].getAttribute('class');
