@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from "react";
+import ReactDOM from "react-dom"
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import App1 from './App1';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  render(){
+    const marginAuto={
+      textAlign:"center"
+    }
+    const marginLeft={
+      marginLeft:"3%"
+    }
+    return(
+      <React.Fragment>
+        <h1 style={marginLeft}>SpaceX Launch Programs</h1>
+        <App1 />
+        <h4 style={marginAuto}>Developed by: Rohit Sarkar</h4>
+      </React.Fragment>
+    );
+  }
 }
-
 export default App;
